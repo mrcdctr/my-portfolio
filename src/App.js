@@ -1,16 +1,20 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";  // <-- Import Contact component
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <About />
+    <div>
+      <Header />
+      <Home />
       <Projects />
-      <Contact />
+      <About />
+      <Contact />   {/* <-- Add Contact component here */}
+      <Footer />
     </div>
   );
 }
