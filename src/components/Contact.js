@@ -2,12 +2,17 @@ import React from 'react';
 
 function Contact() {
   return (
-    <section id="contact" className="py-5">
-      <div className="container">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Your LinkedIn Profile</a></p>
-      </div>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xvgzaeny" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            <label>Message:</label>
+            <textarea name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
   );
 }

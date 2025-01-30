@@ -6,23 +6,58 @@ function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-5 bg-light"> {/* Added padding and background color */}
-      <div className="container">
-        <h2>Projects</h2>
-        <div className="row"> {/* Use a row for grid layout */}
-          {projects.map((project, index) => (
-            <div className="col-md-4" key={index}> {/* Each project takes up 4 columns on medium screens */}
-              <div className="card"> {/* Use a card for each project */}
-                <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary">View on GitHub</a>
-                </div>
-              </div>
+    <section id="projects">
+        <h2>Web Development Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Content Management System (CMS) 🏗</h3>
+                <p>Coming soon..</p>
+                <button class="modal-btn" data-modal="modal1">View More</button>
             </div>
-          ))}
+            <div class="project-card">
+                <h3>E-commerce Website 🛒</h3>
+                <p>Coming soon..</p>
+                <button class="modal-btn" data-modal="modal2">View More</button>
+            </div>
+            <div class="project-card">
+                <h3>Chat Application 💬</h3>
+                <p>Coming soon..</p>
+                <button class="modal-btn" data-modal="modal3">View More</button>
+            </div>
         </div>
-      </div>
+    </section>
+
+    <!-- Python Projects Section -->
+    <section id="python-projects">
+        <h2>Python Projects</h2>
+        <p>Here are some of the Python projects I've worked on:</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Python Cheat Sheet</h3>
+                <p>A curated collection of Python syntax, tips, and examples for quick reference.</p>
+                <a href="https://github.com/mrcdctr/python-cheat-sheet" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Python Developer Course</h3>
+                <p>Resources and projects created while taking a Python developer course.</p>
+                <a href="https://github.com/mrcdctr/python-developer-course" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Meme Generator</h3>
+                <p>A Python application for generating memes with custom captions.</p>
+                <a href="https://github.com/mrcdctr/meme-generator" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Web Scraping App</h3>
+                <p>A tool for scraping and analyzing data from websites using Python.</p>
+                <a href="https://github.com/mrcdctr/web-scraping-app" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Password Vault</h3>
+                <p>A secure password management application built with Python.</p>
+                <a href="https://github.com/mrcdctr/password-vault" target="_blank">View on GitHub</a>
+            </div>
+        </div>
     </section>
   );
 }
