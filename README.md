@@ -77,7 +77,7 @@ Your portfolio will be live on a Vercel-generated link! 🎉
 ## 📧 Contact
 If you have any suggestions or feedback, feel free to contact me!
 
-🔗 **Portfolio**: [Your Portfolio Link]
+🔗 **Portfolio**: https://mrcdctr.github.io/my-portfolio/
 📧 **Email**: your.email@example.com
 📌 **GitHub**: https://github.com/mrcdctr
 
