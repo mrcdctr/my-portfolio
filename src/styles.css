@@ -117,6 +117,7 @@ form {
   .text-primary {
     background: linear-gradient(45deg, #007bff, #0056b3);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
@@ -188,4 +189,30 @@ form {
       margin-top: 10px;
     }
   }
-    
+ /* Ensure Sections Have Consistent Spacing */
+main {
+    padding: 50px 0;
+  }
+  
+  /* Smooth Section Transitions */
+  section {
+    padding: 80px 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Improve Section Headings */
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    section {
+      padding: 60px 20px;
+    }
+  }
+     

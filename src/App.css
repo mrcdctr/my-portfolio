@@ -1,20 +1,35 @@
+/* General Styling */
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif; /* Modern Font */
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Logo Animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.1); /* Subtle hover effect */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
+/* Header Styling */
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +37,61 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Links */
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
+.App-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Button Enhancements */
+button {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #003d82);
+  transform: scale(1.05);
+}
+
+/* Keyframes for Logo Spin */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 15px;
+  }
+  
+  button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
   }
 }
